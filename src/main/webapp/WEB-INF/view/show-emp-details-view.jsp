@@ -6,7 +6,9 @@
 <br>
 <%--Your name is: ${param.employeeName}--%>
 
-Your name is : ${nameAttribute}
+Your name is : ${employee.name}<br>
+Your Surname is : ${employee.surname}<br>
+Your Salary is : ${employee.salary}
 </form>
 </body>
 </html>
