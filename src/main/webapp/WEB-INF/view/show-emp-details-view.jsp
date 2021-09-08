@@ -6,7 +6,7 @@
 <br>
 <%--Your name is: ${param.employeeName}--%>
 
-Your name is : ${nameAttribute} ${description}
+Your name is : ${nameAttribute}
 </form>
 </body>
 </html>
