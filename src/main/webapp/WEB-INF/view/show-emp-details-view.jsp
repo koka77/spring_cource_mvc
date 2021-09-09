@@ -8,7 +8,8 @@
 
 Your name is : ${employee.name}<br>
 Your Surname is : ${employee.surname}<br>
-Your Salary is : ${employee.salary}
+Your Salary is : ${employee.salary}<br>
+Your department is : ${employee.department}<br>
 </form>
 </body>
 </html>
