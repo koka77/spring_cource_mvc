@@ -40,7 +40,9 @@
     <%--    FR <form:checkbox path="languages" value="French"/>--%>
 
     <form:checkboxes path="languages" items="${employee.languageList}"/>
-
+    <br><br>
+    PhoneNumber: <form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber"/>
     <br><br>
     <input type="submit" name="OK!">
 </form:form>

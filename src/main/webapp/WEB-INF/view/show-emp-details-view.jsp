@@ -20,6 +20,7 @@ Language(s):
         </li>
     </c:forEach>
 </ul>
-</form>
+
+Phone number: ${employee.phoneNumber}<br>
 </body>
 </html>
