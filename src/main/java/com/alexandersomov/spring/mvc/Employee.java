@@ -1,6 +1,7 @@
 package com.alexandersomov.spring.mvc;
 
 
+import com.alexandersomov.spring.mvc.validation.CheckEmail;
 
 import javax.validation.constraints.*;
 import java.util.HashMap;
@@ -10,7 +11,7 @@ public class Employee {
 
     @Size(min = 2, message = "Name must be min 2 symbols")
     private String name;
-//    @NotNull
+    //    @NotNull
 //    @NotEmpty(message = "surname is required field")
     @NotBlank(message = "surname is required field")
     private String surname;
@@ -19,13 +20,17 @@ public class Employee {
     @Max(value = 1000, message = "must be less than 1001")
     private int salary;
     private String department;
-    private Map<String,String> departments;
+    private Map<String, String> departments;
     private String CarBrand;
-    private Map<String,String> carBrands;
+    private Map<String, String> carBrands;
     private String[] languages;
     private Map<String, String> languageList;
+
     @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please use pattern XXX-XX-XX")
     private String phoneNumber;
+
+    @CheckEmail (value = "abc.com", message = "email must ends with abc.com")
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();
@@ -123,6 +128,14 @@ public class Employee {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
