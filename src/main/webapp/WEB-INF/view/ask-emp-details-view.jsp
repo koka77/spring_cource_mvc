@@ -13,6 +13,7 @@
     <br>
     <br>
     SurName: <form:input path="surname"/>
+    <form:errors path="surname"/>
     <br>
     <br>
     Salary: <form:input path="salary"/>
@@ -27,15 +28,15 @@
 </form:select>
     <br><br>
     Which car do you want?<br>
-<%--    BMW <form:radiobutton path="carBrand" value="BMV"/>--%>
-<%--    Audi <form:radiobutton path="carBrand" value="Audi"/>--%>
-<%--    MB <form:radiobutton path="carBrand" value="Mercedes-Benz"/>--%>
+    <%--    BMW <form:radiobutton path="carBrand" value="BMV"/>--%>
+    <%--    Audi <form:radiobutton path="carBrand" value="Audi"/>--%>
+    <%--    MB <form:radiobutton path="carBrand" value="Mercedes-Benz"/>--%>
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
     <br><br>
     Foreign language(s)
-<%--    EN <form:checkbox path="languages" value="Enlish"/>--%>
-<%--    DR <form:checkbox path="languages" value="Deutch"/>--%>
-<%--    FR <form:checkbox path="languages" value="French"/>--%>
+    <%--    EN <form:checkbox path="languages" value="Enlish"/>--%>
+    <%--    DR <form:checkbox path="languages" value="Deutch"/>--%>
+    <%--    FR <form:checkbox path="languages" value="French"/>--%>
 
     <form:checkboxes path="languages" items="${employee.languageList}"/>
 
